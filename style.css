@@ -51,7 +51,50 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
-  color:#08063C;
+  color:#fff;
+  background-color: #1C2230;
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 7.5rem;
+}
+
+
+/*NAV*/
+.flex-menu {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.img-logo {
+  max-width: 180px;
+  width: 100%;
+}
+
+.menu--links {
+  list-style: none;
+  display: flex;
+}
+
+.menu--links li {
+  margin-left: 5rem;
+}
+
+.menu__link:link,
+.menu__link:visited {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu__link:hover,
+.menu__link:active {
+  font-weight: 700;
+}
