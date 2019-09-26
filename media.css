@@ -1,196 +1,53 @@
-@media (max-width: 1250px) {
-    
-    .box__heading {
-        font-size: 3.5rem;
-    }
-    .box__desc {
-        font-size: 1.6rem;
-        padding-right: 4rem;
-    }
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+   .wrapper {
+     
+      background-color: orangered;
+   }
 }
 
-@media (max-width: 1000px) {
-    body {
-        font-size: 1.4rem;
-    }
-
-    .hero--container {
-        grid-template-columns: 1fr;
-      }
-
-    .hero__image {
-        order: 0;
-        padding: 2rem;
-    }
-    
-    .box {justify-items: stretch;
-        text-align: center;
-        margin-right: 0;
-        padding: 2rem;
-    }
-
-    form {
-        grid-template-columns: 1fr;
-        grid-row-gap: 1.5rem;
-        padding-right: 0;
-    }
-
-    .menu__list {font-size: 1.6rem}
-
-    .main__image {
-    order: 0;
-    align-self: center;
-    padding: 2rem;
-    }
-
-    .main--container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    padding-bottom: 8rem;
-    }
-
-    .main-box {
-        text-align: left;
-        justify-items: center;
-    }
-
-    .link {justify-self: center;}
-
-    .box__heading {text-align: center;}
-
-    .last--container {
-    display: grid;
-    grid-template-columns: 1fr;
-    }
-
-    .btn-flex {
-    align-self: stretch;
-    margin-top: 1.5rem;
-    }  
-    
-    .menu {
-        justify-items: space-between;
-        padding: 5rem;
-    }
-
-    .logo {
-        max-width: 12rem;
-        width: 100%;
-    }
-    .box__desc {
-        padding-right: 0;
-    }
+/* Small phones to small tablests: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+   .wrapper {
+     
+      background-color: orange;
+   }
 }
 
-@media (max-width: 550px) {
-
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 550px) {
+   body { font-size: 1.4rem;}
+    
     .wrapper {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 4rem;
-      }
+      padding: 2rem;
+      background-color: gold;
+   }
 
-    .menu__list {
-        display: grid;
-        grid-gap: 1.5rem;
-        grid-template-columns: repeat(3, 6rem);
-        justify-items: end;
+   /*NAV*/
+   .img-logo {
+      max-width: 80px;
+      width: 100%;
+   }
+
+   .menu--links li {
+   margin-left: 2.5rem;
+   }
+
+   .menu__link:link,
+   .menu__link:visited { font-size: 1.2rem;}
+   
+   /*HERO*/
+   .hero {
+      padding: 1.9rem;
     }
 
-    .menu {
-        justify-items: space-between;
-        padding: 3rem;
-    }
-
-    .logo {
-        max-width: 10rem;
-        width: 100%;
-    }
-
-    .footer__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 3rem;
-    }
-
-    .contact,
-    .about,
-    .other {
-       margin-bottom: 25px;
-    }
-
-    .social-icons {
-        display: grid;
-        grid-template-columns: 20px 20px 20px;
-        grid-gap: 20px;
-        justify-content: center;
-    }
-
-    .box__heading {
-        font-size: 3rem;
-    }
-
-    .box__desc {
-        font-size: 1.6rem;
-        padding-right: 0;
+    .hero__items--heading {
+         font-size: 2.6rem;
+      
     }
 }
 
 @media (max-width: 375px) {
 
-    .wrapper {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 3rem;
-    }
-
-    .menu__list {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(3, 5rem);
-        justify-items: end;
-    }
-
-    .menu {
-        justify-items: space-between;
-        padding: 2rem;
-    }
-
-    .logo {
-        max-width: 10rem;
-        width: 100%;
-    }
-
-    .footer__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 3rem;
-    }
-
-    .contact,
-    .about,
-    .other {
-        margin-bottom: 25px;
-    }
-
-    .social-icons {
-        display: grid;
-        grid-template-columns: 20px 20px 20px;
-        grid-gap: 20px;
-        justify-content: center;
-    }
-
-      .box__heading {
-        font-size: 2.8rem;
-    }
-
-    .box__desc {
-        font-size: 1.4rem;
-        padding-right: 0;
-    }
-
-    .menu__list {font-size: 1.3rem}
+    
 }
