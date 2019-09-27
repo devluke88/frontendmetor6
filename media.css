@@ -45,9 +45,27 @@
          font-size: 2.6rem;
       
     }
+
+    .btn-grad {
+       font-size: 1.2rem;
+       width: 24.5rem;
+      }
 }
 
 @media (max-width: 375px) {
+   .wrapper {
+      background-color: grey;
+   }
 
-    
+   .hero {
+      padding: 0.8rem; 
+    }
+
+    .hero__items>* {
+      margin-bottom: 2rem;
+    }
+
+    .hero__items--heading {
+      font-size: 2.3rem;
+    }
 }
