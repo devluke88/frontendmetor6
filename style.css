@@ -35,6 +35,12 @@ The designs were created to the following widths:
 
 - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 - Weights: 400 */
+:root {
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --blue: #3dadd3;
+  --primary-gradient: linear-gradient(to right, var(--moderate-cyan), var(--blue));
+}
+
 
 *,
 *::after,
@@ -92,11 +98,17 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 .menu__link:hover,
 .menu__link:active {
-  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
 }
 
 /*HERO*/
@@ -112,7 +124,19 @@ body {
   align-items: center;
   max-width: 78rem;
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid red; 
+}
+
+.hero__items {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__items>* {
+  margin-bottom: 3rem;
 }
 
 .hero__img {
@@ -123,5 +147,28 @@ body {
 .hero__items--heading {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
-  
+  max-width: 68rem;
+}
+
+.hero__items--desc {
+  max-width: 58.5rem;
+  line-height: 1.5;
+}
+
+.btn {
+  text-decoration: none;
+
+}
+
+.btn-grad {
+  color: #fff;
+  width: 280px;
+  border-radius: 40px;
+  background-image: var(--primary-gradient);
+  font-size: 1.6rem;
+  padding: 1.9rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
 }
