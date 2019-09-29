@@ -182,3 +182,35 @@ body {
 .btn-grad:hover {
   transform: scale(1.1,1.1);
 }
+
+/* FEATURES */
+.main--features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid pink;
+  align-content: flex-end;
+  grid-gap: 2rem;
+}
+
+.features {
+  text-align: center;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.features__img,
+.features__items>*{
+  padding-bottom: 1rem;
+}
+
+.features__items--heading {
+  font-size: 1.8rem;
+}
+
+.features__items--desc {
+  font-size: 1.4rem;
+  max-width: 35rem;
+}
