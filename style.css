@@ -38,6 +38,7 @@ The designs were created to the following widths:
 :root {
   --moderate-cyan: hsl(170, 45%, 43%);
   --blue: #3dadd3;
+  --light-green: #62E0D9;
   --primary-gradient: linear-gradient(to right, var(--moderate-cyan), var(--blue));
 }
 
@@ -185,20 +186,20 @@ body {
 
 /* FEATURES */
 .main--features {
+  max-width: 880px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid pink;
-  align-content: flex-end;
-  grid-gap: 2rem;
+  grid-gap: 8.5rem 15rem;
+  margin-bottom: 10rem;
 }
 
 .features {
   text-align: center;
   border: 1px solid green;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  justify-items: center;
 }
 
 .features__img,
@@ -212,5 +213,56 @@ body {
 
 .features__items--desc {
   font-size: 1.4rem;
-  max-width: 35rem;
+  line-height: 1.5;
+}
+
+/* PRODUCTIVITY */
+.main--productivity {
+  display: flex;
+  align-items: center;
+}
+
+.productivity__img {
+width: 612px;
+border: 1px solid white;
+}
+
+.img-productive {
+width: 100%;
+}
+
+.productivity {
+  flex-basis: 64.5rem;
+  padding-left: 6rem;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.productivity__heading {
+  font-family: 'Raleway', sans-serif;
+  max-width: 34rem;
+  font-size: 3.8rem;
+}
+
+.productivity__desc:first-of-type {
+  max-width: 51.7rem;
+}
+
+.productivity__desc {
+  font-size: 1.6rem;
+}
+
+.btn-link {
+  color: var(--light-green);
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--light-green);
+  padding-bottom: 5px;
+}
+
+.wrapper {
+  border: 1px solid gray;
 }
