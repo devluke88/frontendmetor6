@@ -2,11 +2,33 @@
 @media only screen and (max-width: 1023px) {
    .wrapper {
       background-color: orangered;
+      padding: 4rem;
    }
 
    .main--features {
       grid-gap: 8.5rem 10rem;
-    }
+   }
+
+   .productivity {
+      flex-basis: 30rem;
+      padding: 0rem;
+      margin-left: 4rem;
+   }
+    
+   .productivity__heading {
+      font-size: 2.8rem;
+      margin-bottom: 1rem; 
+   }
+    
+    
+   .productivity__desc {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+   }
+    
+   .btn-link {
+      font-size: 1.4rem;
+   }
 }
 
 /* Small phones to small tablests: from 481 to 767px */
@@ -18,7 +40,38 @@
    .main--features {
       grid-template-columns: 1fr;
       grid-gap: 8.5rem 5rem;
-    }
+   }
+
+   .main--productivity {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .productivity__img {
+      margin-bottom: 3rem;
+   }
+
+   .productivity {
+      flex-basis: 20rem;
+      padding: 0rem;
+   }
+    
+   .productivity__heading {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      max-width: none;
+   }
+    
+    
+   .productivity__desc {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+   }
+    
+   .btn-link {
+      font-size: 1.4rem;
+   }
+    
 }
 
 /* Small phones: from 0 to 480px */
@@ -67,12 +120,33 @@
       max-height: 71px;
    }
 
+   .productivity {
+      flex-basis: 20rem;
+      padding: 0rem;
+    }
+    
+    .productivity__heading {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    
+    .productivity__desc {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    
+    .btn-link {
+      font-size: 1.4rem;
+    }
+
 
 }
 
 @media (max-width: 375px) {
    .wrapper {
       background-color: grey;
+      padding: 1.7rem;
    }
 
    .hero {
@@ -86,4 +160,26 @@
     .hero__items--heading {
       font-size: 2.3rem;
     }
+
+    .productivity {
+      flex-basis: 20rem;
+      padding: 0rem;
+      height: 20rem;
+    }
+    
+    .productivity__heading {
+      font-size: 1.9rem;
+    }
+    
+    
+    .productivity__desc {
+      font-size: 1.4rem;
+    }
+    
+    .btn-link {
+      font-size: 1.4rem;
+    }
+
+    
+
 }
