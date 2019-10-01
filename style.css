@@ -79,8 +79,12 @@ body {
   align-items: center;
 }
 
-.img-logo {
+.hero__logo {
   max-width: 180px;
+}
+
+.img-logo {
+  
   width: 100%;
   transition: all 0.4s ease-in-out;
 }
@@ -223,7 +227,7 @@ body {
 }
 
 .productivity__img {
-width: 612px;
+max-width: 612px;
 border: 1px solid white;
 }
 
@@ -261,6 +265,11 @@ width: 100%;
   font-size: 1.6rem;
   border-bottom: 1px solid var(--light-green);
   padding-bottom: 5px;
+}
+
+.btn-link:hover {
+  border: none;
+  margin-bottom: 1px;
 }
 
 .wrapper {
