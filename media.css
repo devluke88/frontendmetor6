@@ -54,6 +54,7 @@
    .productivity {
       flex-basis: 20rem;
       padding: 0rem;
+      margin-left: 0;
    }
     
    .productivity__heading {
@@ -71,6 +72,21 @@
    .btn-link {
       font-size: 1.4rem;
    }
+
+   .main--testimonials {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+    }
+
+    .quotes {
+      position: absolute;
+      z-index: 1;
+      top: -3.6rem;
+      left: -0.9rem;
+      width: 100%;
+      max-width: 5.5rem;
+    }
     
 }
 
@@ -163,7 +179,7 @@
 
     .productivity {
       flex-basis: 20rem;
-      padding: 0rem;
+      padding-left: 0rem;
       height: 20rem;
     }
     
