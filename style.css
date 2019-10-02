@@ -40,6 +40,7 @@ The designs were created to the following widths:
   --blue: #3dadd3;
   --light-green: #62E0D9;
   --primary-gradient: linear-gradient(to right, var(--moderate-cyan), var(--blue));
+  --dark-blue: #21293C;
 }
 
 
@@ -80,7 +81,7 @@ body {
 }
 
 .hero__logo {
-  max-width: 180px;
+  max-width: 730px;
 }
 
 .img-logo {
@@ -270,6 +271,54 @@ width: 100%;
 .btn-link:hover {
   border: none;
   margin-bottom: 1px;
+}
+
+.main--testimonials {
+  margin-top: 14rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3.8rem;
+}
+
+.testimonials {
+  position: relative;
+  padding: 4.5rem 2.8rem 2.5rem 2.3rem;
+  background-color: var(--dark-blue);
+  border-radius: 4px;
+  
+}
+
+
+#quotes {
+  position: absolute;
+  z-index: -1;
+  top: -3.6rem;
+  left: -0.9rem;
+  width: 100%;
+  max-width: 5.5rem;
+}
+
+.testimonials__desc {
+  font-size: 1.4rem;
+}
+
+.testimonials__img {
+  border-radius: 50%;
+}
+
+.testimonials__author {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  font-size: 1.1rem;
+  margin-left: 0.7rem;
+}
+
+.name {
+  display: block;
 }
 
 .wrapper {
