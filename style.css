@@ -41,6 +41,8 @@ The designs were created to the following widths:
   --light-green: #62E0D9;
   --primary-gradient: linear-gradient(to right, var(--moderate-cyan), var(--blue));
   --dark-blue: #21293C;
+  --cta-blue: #1C2230;
+  --footer-blue: #0C1524;
 }
 
 
@@ -62,7 +64,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   color:#fff;
-  background-color: #1C2230;
+  background-color: #181E2A;
 }
 
 .wrapper {
@@ -273,29 +275,32 @@ width: 100%;
   margin-bottom: 1px;
 }
 
+.quote--container {
+  position: relative;
+}
+
+.quotes {
+  position: absolute;
+  z-index: 1;
+  top: 10.5rem;
+  left: -0.9rem;
+  height: auto;
+  max-width: 5.5rem;
+}
+
 .main--testimonials {
   margin-top: 14rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 3.8rem;
+  margin-bottom: 26rem;
 }
 
 .testimonials {
-  position: relative;
+  z-index: 2;
   padding: 4.5rem 2.8rem 2.5rem 2.3rem;
   background-color: var(--dark-blue);
   border-radius: 4px;
-  
-}
-
-
-#quotes {
-  position: absolute;
-  z-index: -1;
-  top: -3.6rem;
-  left: -0.9rem;
-  width: 100%;
-  max-width: 5.5rem;
 }
 
 .testimonials__desc {
@@ -320,6 +325,67 @@ width: 100%;
 .name {
   display: block;
 }
+
+/* CTA FORM */
+.main--cta-form {
+  position: relative;
+  margin: 0 auto;
+}
+
+.cta-form__container {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--cta-blue);
+  max-width: 86rem;
+  width: 100%;
+  height: 27rem;
+  padding: 5rem 7.6rem 4rem 7.6rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cta-form__heading {
+  font-size: 3.4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.cta-form__desc {
+  font-size: 1.4rem;
+}
+
+.cta-form {
+display: flex;
+justify-content: space-between;
+}
+
+#email {
+  flex-basis: 48rem;
+  border-radius: 40px;
+  padding-left: 3.6rem;
+  border: none;
+}
+
+#email::placeholder {
+  color: #C6C6C6;
+}
+
+label {
+  display: none;
+}
+
+.footer-section {
+  padding-top: 12.5rem;
+  background-color: var(--footer-blue);
+}
+
+
 
 .wrapper {
   border: 1px solid gray;
