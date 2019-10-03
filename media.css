@@ -29,6 +29,7 @@
    .btn-link {
       font-size: 1.4rem;
    }
+    
 }
 
 /* Small phones to small tablests: from 481 to 767px */
@@ -77,16 +78,16 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 2rem;
-    }
+    } 
 
-    .quotes {
+   .quotes {
       position: absolute;
       z-index: 1;
-      top: -3.6rem;
-      left: -0.9rem;
-      width: 100%;
-      max-width: 5.5rem;
-    }
+      top: 11rem;
+      left: 0.5rem;
+      height: auto;
+      max-width: 4rem;
+   }
     
 }
 
@@ -95,7 +96,7 @@
    body { font-size: 1.4rem;}
     
     .wrapper {
-      padding: 4rem;
+      padding: 3rem;
       background-color: gold;
    }
 
@@ -156,6 +157,16 @@
       font-size: 1.4rem;
     }
 
+   .quotes {
+      position: absolute;
+      z-index: 1;
+      top: 12.2rem;
+      left: 0.5rem;
+      height: auto;
+      max-width: 2.5rem;
+   }
+    
+
 
 }
 
@@ -195,6 +206,32 @@
     .btn-link {
       font-size: 1.4rem;
     }
+
+    .main--testimonials {
+       padding: 2.3rem;
+    }
+
+    .testimonials {
+      position: relative;
+      padding: 3rem 2.5rem 2.5rem 2.3rem;
+    }
+
+    .testimonials__desc {
+      font-size: 1rem;
+    }
+
+    .testimonials__author {
+      margin-top: 2rem;
+    }
+
+    .quotes {
+      position: absolute;
+      z-index: 1;
+      top: 14.5rem;
+      left: 2.5rem;
+      height: auto;
+      max-width: 2.2rem;
+   }
 
     
 
