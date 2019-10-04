@@ -29,11 +29,22 @@
    .btn-link {
       font-size: 1.4rem;
    }
-    
+
+   .cta-form__container {
+      transform: translate(-50%, -30%);
+   }
+   
+   .footer-section {
+      padding-top: 12.5rem;
+   }
+
+   .footer {
+      padding-top: 8rem;
+   }
 }
 
 /* Small phones to small tablests: from 481 to 767px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
    .wrapper {
       background-color: orange;
    }
@@ -64,7 +75,6 @@
       max-width: none;
    }
     
-    
    .productivity__desc {
       font-size: 1.6rem;
       margin-bottom: 1rem;
@@ -88,7 +98,34 @@
       height: auto;
       max-width: 4rem;
    }
+
+   .cta-form {
+      /* display: flex; */
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      height: 12rem;
+   }
+
+   .cta-form__heading {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+   }
     
+   #email {
+      flex-basis: 48rem;
+      margin-right: 0;  
+      border-radius: 40px;
+      padding: 1rem 1rem 1rem 3.6rem;  
+   }
+
+   .cta-form__container {
+      transform: translate(-50%, -37%);
+   }
+
+   .footer-section {
+      padding-top: 17rem;
+   }
 }
 
 /* Small phones: from 0 to 480px */
@@ -122,7 +159,7 @@
       font-size: 2.6rem;
    }
 
-   .btn-grad {
+   .btn-bg {
       font-size: 1.2rem;
       width: 24.5rem;
    }
@@ -166,7 +203,18 @@
       max-width: 2.5rem;
    }
     
+   .cta-form__container {
+      height: auto;
+      padding: 4.5rem 3rem 3.5rem 3rem;
+   }
+   
+   .cta-form__container {
+      transform: translate(-50%, -40%);
+   }
 
+   .footer-section {
+      padding-top: 16.5rem;
+   }
 
 }
 
@@ -233,6 +281,27 @@
       max-width: 2.2rem;
    }
 
-    
+   .cta-form__heading {
+      font-size: 1.9rem;
+   }
 
+   .cta-form__desc {
+      font-size: 1.3rem;
+    }
+
+    .btn-sm {
+       font-size: 1.3rem;
+    }
+
+   .cta-form__container {
+      transform: translate(-50%, -45%);
+   }
+
+   .footer-section {
+      padding-top: 16.5rem;
+   }
+
+   .footer {
+      padding-top: 7.5rem;
+   }
 }
