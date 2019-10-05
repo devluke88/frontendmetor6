@@ -137,7 +137,6 @@ body {
   align-items: center;
   max-width: 78rem;
   text-align: center;
-  border: 1px solid red; 
 }
 
 .hero__items {
@@ -218,14 +217,12 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid pink;
   grid-gap: 8.5rem 15rem;
   margin-bottom: 10rem;
 }
 
 .features {
   text-align: center;
-  border: 1px solid green;
   display: grid;
   justify-items: center;
 }
@@ -252,7 +249,6 @@ body {
 
 .productivity__img {
 max-width: 612px;
-border: 1px solid white;
 }
 
 .img-productive {
@@ -418,8 +414,83 @@ label {
 padding-top: 8rem;
 }
 
+.footer__content {
+  display: flex;
+}
 
+.footer__content--item:nth-child(1) {
+  flex: 2
+}
 
-.wrapper {
-  border: 1px solid gray;
+.footer__content--item:not(:nth-child(1)) {
+  flex:1;
+  
+}
+
+.footer__content--item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__content--item {
+  font-size: 1.6rem;
+  list-style: none;
+  line-height: 2;
+}
+
+.footer-desc {
+  line-height: 1.5;
+}
+
+.li-flex {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-link:hover {
+  color: var(--light-green);
+  
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: var(--light-green);
+}
+
+.social-link {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-link:hover {
+  color: var(--light-green);
+}
+.icon-location {
+  padding-top: 0.5rem;
+}
+
+[class^='icon-'] {
+  padding-right: 2rem;
+}
+
+.icon-location {
+  align-self: flex-start;
+}
+
+.footer-flex {
+  display: flex;
+  max-width:  37rem;
+}
+
+.attribution {
+  padding: 2rem;
 }
