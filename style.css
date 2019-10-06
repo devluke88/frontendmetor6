@@ -1,40 +1,3 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Very Dark Blue: hsl(243, 87%, 12%)
-- Desaturated Blue: hsl(238, 22%, 44%)
-
-### Accent
-
-- Bright Blue: hsl(224, 93%, 58%)
-- Moderate Cyan: hsl(170, 45%, 43%)
-
-### Neutral
-
-- Light Grayish Blue: hsl(240, 75%, 98%)
-- Light Gray: hsl(0, 0%, 75%)
-
-## Typography
-
-### Headings, Call-to-actions, Header Navigation
-
-- Family: [hsl(0, 0%, 75%)](https://fonts.google.com/specimen/Raleway)
-- Weights: 400, 700
-
-### Body
-
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400 */
 :root {
   --moderate-cyan: hsl(170, 45%, 43%);
   --blue: #3dadd3;
@@ -44,7 +7,6 @@ The designs were created to the following widths:
   --cta-blue: #1C2230;
   --footer-blue: #0C1524;
 }
-
 
 *,
 *::after,
@@ -56,8 +18,8 @@ The designs were created to the following widths:
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -73,7 +35,6 @@ body {
   padding: 7.5rem;
 }
 
-
 /*NAV*/
 .flex-menu {
   font-family: 'Raleway', sans-serif;
@@ -87,7 +48,6 @@ body {
 }
 
 .img-logo {
-  
   width: 100%;
   transition: all 0.4s ease-in-out;
 }
@@ -167,6 +127,7 @@ body {
   line-height: 1.5;
 }
 
+/*BUTTONS*/
 .btn {
   text-decoration: none;
 }
@@ -187,6 +148,19 @@ body {
 
 .btn-bg:hover {
   transform: scale(1.1,1.1);
+}
+
+.btn-link {
+  color: var(--light-green);
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--light-green);
+  padding-bottom: 5px;
+}
+
+.btn-link:hover {
+  border: none;
+  margin-bottom: 1px;
 }
 
 .btn-sm {
@@ -228,7 +202,7 @@ body {
 }
 
 .features__img,
-.features__items>*{
+.features__items>* {
   padding-bottom: 1rem;
 }
 
@@ -248,11 +222,11 @@ body {
 }
 
 .productivity__img {
-max-width: 612px;
+  max-width: 612px;
 }
 
 .img-productive {
-width: 100%;
+  width: 100%;
 }
 
 .productivity {
@@ -279,19 +253,8 @@ width: 100%;
   font-size: 1.6rem;
 }
 
-.btn-link {
-  color: var(--light-green);
-  text-decoration: none;
-  font-size: 1.6rem;
-  border-bottom: 1px solid var(--light-green);
-  padding-bottom: 5px;
-}
 
-.btn-link:hover {
-  border: none;
-  margin-bottom: 1px;
-}
-
+/*TESTIMONIALS*/
 .quote--container {
   position: relative;
 }
@@ -382,7 +345,6 @@ width: 100%;
 .cta-form {
   display: flex;
   justify-content: space-between;
-
 }
 
 #email {
@@ -393,7 +355,6 @@ width: 100%;
   border: none;
   flex-shrink: 2;
   max-height: 5rem;
-  
 }
 
 #email::placeholder {
@@ -404,6 +365,8 @@ label {
   display: none;
 }
 
+
+/*FOOTER*/
 .footer-section {
   padding-top: 12.5rem;
   background-color: var(--footer-blue);
@@ -412,6 +375,10 @@ label {
 
 .footer {
 padding-top: 8rem;
+}
+
+.footer__img {
+  margin-bottom: 3.6rem;
 }
 
 .footer__content {
@@ -424,7 +391,6 @@ padding-top: 8rem;
 
 .footer__content--item:not(:nth-child(1)) {
   flex:1;
-  
 }
 
 .footer__content--item:not(:last-child) {
@@ -452,8 +418,7 @@ padding-top: 8rem;
 }
 
 .contact-link:hover {
-  color: var(--light-green);
-  
+  color: var(--light-green); 
 }
 
 .link {
@@ -474,16 +439,15 @@ padding-top: 8rem;
 .social-link:hover {
   color: var(--light-green);
 }
+
 .icon-location {
+  align-self: flex-start;
   padding-top: 0.5rem;
+  height: 3rem;
 }
 
 [class^='icon-'] {
   padding-right: 2rem;
-}
-
-.icon-location {
-  align-self: flex-start;
 }
 
 .footer-flex {
