@@ -1,5 +1,6 @@
 /* Small tablet to big tablet: from 768 to 1023px */
 @media only screen and (max-width: 1023px) {
+   
    .wrapper {
       padding: 4rem;
    }
@@ -18,7 +19,6 @@
       font-size: 2.8rem;
       margin-bottom: 1rem; 
    }
-    
     
    .productivity__desc {
       font-size: 1.4rem;
@@ -131,9 +131,9 @@
       margin-bottom: 2rem;
     }
 
-    .social-icons {
-       align-self: center;
-    }
+   .social-icons {
+      align-self: center;
+   }
 
 }
 
@@ -145,7 +145,6 @@
       padding: 3rem;
    }
 
-   /*NAV*/
    .img-logo {
       max-width: 80px;
       width: 100%;
@@ -158,7 +157,6 @@
    .menu__link:link,
    .menu__link:visited { font-size: 1.2rem;}
    
-   /*HERO*/
    .hero {
       padding: 1.9rem;
    }
@@ -185,22 +183,21 @@
    .productivity {
       flex-basis: 20rem;
       padding: 0rem;
-    }
+   }
     
-    .productivity__heading {
+   .productivity__heading {
       font-size: 2rem;
       margin-bottom: 1rem;
-    }
+   }
     
-    
-    .productivity__desc {
+   .productivity__desc {
       font-size: 1.4rem;
       margin-bottom: 1rem;
-    }
+   }
     
-    .btn-link {
+   .btn-link {
       font-size: 1.4rem;
-    }
+   }
 
    .quotes {
       position: absolute;
@@ -234,53 +231,52 @@
 
    .hero {
       padding: 0.8rem; 
-    }
+   }
 
-    .hero__items>* {
+   .hero__items>* {
       margin-bottom: 2rem;
-    }
+   }
 
-    .hero__items--heading {
+   .hero__items--heading {
       font-size: 2.3rem;
-    }
+   }
 
-    .productivity {
+   .productivity {
       flex-basis: 20rem;
       padding-left: 0rem;
       height: 20rem;
-    }
+   }
     
-    .productivity__heading {
+   .productivity__heading {
       font-size: 1.9rem;
-    }
+   }
     
-    
-    .productivity__desc {
+   .productivity__desc {
       font-size: 1.4rem;
-    }
+   }
     
-    .btn-link {
+   .btn-link {
       font-size: 1.4rem;
-    }
+   }
 
-    .main--testimonials {
-       padding: 2.3rem;
-    }
+   .main--testimonials {
+      padding: 2.3rem;
+   }
 
-    .testimonials {
+   .testimonials {
       position: relative;
       padding: 3rem 2.5rem 2.5rem 2.3rem;
-    }
+   }
 
-    .testimonials__desc {
+   .testimonials__desc {
       font-size: 1rem;
-    }
+   }
 
-    .testimonials__author {
+   .testimonials__author {
       margin-top: 2rem;
-    }
+   }
 
-    .quotes {
+   .quotes {
       position: absolute;
       z-index: 1;
       top: 14.5rem;
@@ -297,9 +293,9 @@
       font-size: 1.3rem;
     }
 
-    .btn-sm {
-       font-size: 1.3rem;
-    }
+   .btn-sm {
+      font-size: 1.3rem;
+   }
 
    .cta-form__container {
       transform: translate(-50%, -45%);
